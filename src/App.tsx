@@ -9,17 +9,24 @@
  */
 
 import React from "react";
-import {
-  Text,
-} from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
-  /*  =========== COMPONENTES FUNCIONAIS ==========
-  * Componentes funcionais retornam um JSX para ser renderizados.
-  * no corpo do código antes da função "return()" pode ser utilizado 
-  * TS/JS livremente, enquanto que para utiliza-los dentro da função
-  * de retorno se faz necessário o uso de chaves {}.
-  */
+/*  =========== Área da tela ==========
+ * Dependendo do aparelho é possível que existam
+ * features de hardware que impactem as telas e,
+ * por consequência sua renderização.
+ * Para solucionar esse problema faremos uso de
+ * um componente que, de maneira inteligente, se
+ * ajusta para contornar quaisquer obstaculos de
+ * hardware que possam influenciar a tela.
+ */
 
-const App = () => <Text>HOME</Text>
+const App = () => {
+  return (
+    <SafeAreaView>
+      <Text>HOME</Text>
+    </SafeAreaView>
+  );
+};
 
 export default App;
