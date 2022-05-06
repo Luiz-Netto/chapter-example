@@ -11,19 +11,19 @@
 import React from "react";
 import { SafeAreaView, Text } from "react-native";
 
-/*  =========== Área da tela ==========
- * Dependendo do aparelho é possível que existam
- * features de hardware que impactem as telas e,
- * por consequência sua renderização.
- * Para solucionar esse problema faremos uso de
- * um componente que, de maneira inteligente, se
- * ajusta para contornar quaisquer obstaculos de
- * hardware que possam influenciar a tela.
+/*  =========== ESTILIZAÇÃO ==========
+ *   Cada componente pode ter seu estilo customizado
+ *   ao se passar uma proprieda para tal componente.
+ *   A estilização mais simples é a estilizaçnao Inline,
+ *   aonde o componente recebe, na mesma linha da declaração
+ *   da propriedade "style", um objeto contendo todas as
+ *   opções de estilo para o componente.
  */
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>HOME</Text>
     </SafeAreaView>
   );
