@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     width: 150,
     height: 70,
-    borderWidth: 8,
+    borderWidth: 5,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
